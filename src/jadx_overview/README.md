@@ -1,12 +1,14 @@
 # jadx概览
 
-[安卓逆向](https://book.crifan.org/books/android_reverse_dev/website/)期间用到的，静态分析时涉及到的，从`apk`/`dex`转`java`的反编译器，有多种：
+[安卓逆向](https://book.crifan.org/books/android_reverse_dev/website/)期间用到的，[静态分析](https://book.crifan.org/books/android_re_static_analysis/website/)时常涉及到的，从`apk`/`dex`转`java`的反编译器，有多种：
 
 * `jadx`
 * `JEB`
 * `GDA`
 
-等，其中，比较好用（之一的）是：`jadx`
+等。
+
+其中比较好用（之一的）是：`jadx`
 
 ## jadx
 
