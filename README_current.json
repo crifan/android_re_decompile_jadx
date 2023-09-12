@@ -1,0 +1,7 @@
+{
+  "latestVersion": "v1.0",
+  "lastUpdate": "20230912",
+  "gitRepoName": "android_re_decompile_jadx",
+  "bookName": "安卓反编译利器：jadx",
+  "bookDescription": "介绍整理安卓逆向中静态分析之反编译器中比较好用的反编译器：jadx。包括如何下载，以及jadx的基本用法，包括从apk转java，从dex转java；然后是jadx的高级用法，包括显示坏代码、开启反混淆；然后是jadx的gui图形界面版本，包括如何打开，参数设置页面，以及参数映射关系，和其他一些页面；然后是jadx使用心得，以及help语法帮助。"
+}
