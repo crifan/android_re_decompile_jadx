@@ -24,3 +24,30 @@
   * 直接导出代码
 * 图形界面：`jadx-gui` 
   * 查看反编译的结果，再导出代码
+
+## 加到环境变量中
+
+为了后续使用方便，去把其路径加到`Mac`此处的启动脚本中的环境变量：
+
+* 编辑启动脚本
+  ```bash
+  vi ~/.zshrc
+  ```
+* 编辑，加上
+  ```bash
+  export PATH=/Users/crifan/dev/dev_tool/_reverse_security/android/decompile/jadx/jadx-1.5.0/bin:$PATH
+  ```
+    * 并保存退出
+* 确认添加成功
+  ```bash
+  ➜  ~ cat ~/.zshrc| grep jadx
+  export PATH=/Users/crifan/dev/dev_tool/_reverse_security/android/decompile/jadx/jadx-1.5.0/bin:$PATH
+  ```
+* 使得当前终端就立刻生效：用`source`
+  ```bash
+  source ~/.zshrc
+  ```
+* 以后每次使用jadx，直接输入jadx即可
+  ```bash
+  jadx
+  ```

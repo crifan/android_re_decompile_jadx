@@ -9,6 +9,7 @@
 * [jadx高级用法](jadx_adv_usage/README.md)
   * [显示坏代码](jadx_adv_usage/show_bad_code.md)
   * [反混淆](jadx_adv_usage/deobfuscation.md)
+  * [设置注释等级](jadx_adv_usage/comments_level.md)
 * [jadx-gui图形界面版](jadx_gui/README.md)
   * [参数设置页面](jadx_gui/preferences/README.md)
     * [cli和gui参数对应关系](jadx_gui/preferences/cli_gui_para_map.md)

@@ -4,15 +4,39 @@
 
 * 命令行：`jadx`
   * 处理`apk`
-    * 语法
-      ```bash
-      jadx -d output_folder your_apk_file.apk
-      ```
-    * 举例
-      ```bash
-      jadx/jadx-0.9.0/bin/jadx -d from_jadx_command xiaohuasheng-v1.5.apk
-      jadx/jadx-0.9.0/bin/jadx -d exported_java_src mafengwo_ziyouxing.apk
-      ```
+    * 基本用法
+      * 语法
+        ```bash
+        jadx -d output_folder your_apk_file.apk
+        ```
+      * 举例
+        ```bash
+        jadx/jadx-0.9.0/bin/jadx -d from_jadx_command xiaohuasheng-v1.5.apk
+        jadx/jadx-0.9.0/bin/jadx -d exported_java_src mafengwo_ziyouxing.apk
+        ```
+    * 典型用法
+      * 语法
+        ```bash
+        jadx --show-bad-code --comments-level debug -d outputFolder yourAndroidApp.apk
+        ```
+        * 说明
+          * `--show-bad-code`：显示更多（即使只是部分成功反编译）的代码
+            * 否则，会看到提示：
+              ```java
+              /*
+                  Code decompiled incorrectly, please refer to instructions dump.
+                  To view partially-correct add '--show-bad-code' argument
+              */
+              ```
+              * 目的：这样可以输出更多反编译代码，即使只是部分反编译成功，但是也值得参考和研究，比（遇到部分代码反编译错误，就整段代码）完全不输出要好
+          * `--comments-level debug`：
+            * 否则会看到提示
+              ```java
+              /*
+                  Method dump skipped, instructions count: 330
+                  To view this dump add '--comments-level debug' option
+              */
+              ```
   * 处理`dex`
     * 语法
         ```bash
